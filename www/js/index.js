@@ -3,12 +3,10 @@ var app = {
         this.bind();
     },
     bind: function() {
-        document.addEventListener('deviceready', this.event.deviceready, false);
+        document.addEventListener('deviceready', this.deviceready, false);
     },
-    event: {
-        deviceready: function() {
-            app.report('deviceready');
-        }
+    deviceready: function() {
+        app.report('deviceready');
     },
     report: function(id) {
         document.getElementById(id).innerHTML= 'ok';
