@@ -1,0 +1,16 @@
+body {
+    background-color:#EEEEEE;
+    font-family:monospace;
+    font-size:1em;
+}
+
+h1 {
+    background:url(../img/cordova.png) center center no-repeat;
+    background-size:contain;
+    height:200px;
+    width:100%;
+}
+
+p {
+    text-align:center;
+}
