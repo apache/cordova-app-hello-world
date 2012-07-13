@@ -7,6 +7,9 @@ var app = {
     },
     event: {
         deviceready: function() {
+            app.report('deviceready');
         }
+    },
+    report: function(id) {
     }
 };

@@ -46,6 +46,18 @@ describe('app', function() {
             it('should exist', function() {
                 expect(app.event.deviceready).toBeDefined();
             });
+
+            it('should report that it fired', function() {
+                spyOn(app, 'report');
+                app.event.deviceready();
+                expect(app.report).toHaveBeenCalledWith('deviceready');
+            });
+        });
+    });
+
+    describe('report', function() {
+        it('should exist', function() {
+            expect(app.report).toBeDefined();
         });
     });
 });
