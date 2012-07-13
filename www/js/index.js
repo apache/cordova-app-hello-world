@@ -3,5 +3,10 @@ var app = {
         this.bind();
     },
     bind: function() {
+        document.addEventListener('deviceready', this.event.deviceready, false);
+    },
+    event: {
+        deviceready: function() {
+        }
     }
 };
