@@ -59,5 +59,11 @@ describe('app', function() {
         it('should exist', function() {
             expect(app.report).toBeDefined();
         });
+
+        it('should report "ok" for the given ID', function() {
+            document.getElementById('stage').innerHTML = '<span id="deviceready"></span>';
+            app.report('deviceready');
+            expect(document.getElementById('deviceready').innerHTML).toEqual('ok');
+        });
     });
 });

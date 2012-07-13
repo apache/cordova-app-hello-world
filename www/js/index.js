@@ -11,5 +11,6 @@ var app = {
         }
     },
     report: function(id) {
+        document.getElementById(id).innerHTML= 'ok';
     }
 };
