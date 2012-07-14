@@ -9,6 +9,7 @@ var app = {
         app.report('deviceready');
     },
     report: function(id) {
-        document.getElementById(id).innerHTML= 'ok';
+        document.querySelector('#' + id + ' .pending').classList.add('hide');
+        document.querySelector('#' + id + ' .complete').classList.remove('hide');
     }
 };

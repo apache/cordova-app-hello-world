@@ -10,8 +10,10 @@
     <body>
         <div class="logo"></div>
         <h1>Apache Cordova™</h1>
-        <p class="report report-off blink">Establishing Connection</p>
-        <p class="report report-on blink hide">Connection Ready</p>
+        <div id="deviceready">
+            <p class="status pending blink">Connecting to Device</p>
+            <p class="status complete blink hide">Device is Ready</p>
+        </div>
 
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

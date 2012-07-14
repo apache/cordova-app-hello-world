@@ -42,7 +42,7 @@ h1 {
     text-align:center;
 }
 
-.report {
+.status {
     background-color:#333333;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -56,7 +56,7 @@ h1 {
     width:200px;
 }
 
-.report-on {
+.status.complete {
     background-color:#4B946A;
 }
 
