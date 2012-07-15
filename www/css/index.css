@@ -1,6 +1,12 @@
 html,
 body {
     height:100%;
+    font-size:16px;
+    width:100%;
+}
+
+html {
+    display:table;
 }
 
 body {
@@ -16,6 +22,8 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
+    display:table-cell;
+    vertical-align:middle;
 }
 
 body,
@@ -26,13 +34,11 @@ h1 {
     text-transform:uppercase;
 }
 
-.logo {
-    background:url(../img/cordova.png) center center no-repeat;
-    background-size:contain;
-    height:500px;
+img {
+    display:block;
     margin:0px auto;
-    margin-bottom:-50px;
-    width:426px;
+    margin-bottom:-20px;
+    width:400px;
     max-width:100%;
 }
 
@@ -49,11 +55,13 @@ h1 {
     border-radius:4px;
     color:#FFFFFF;
     display:block;
-    font-size:0.8em;
+    font-size:1em;
     margin:5px auto;
+    margin-top:10px;
     padding:2px 4px;
     text-align:center;
-    width:200px;
+    width:225px;
+    max-width:225px;
 }
 
 .status.complete {
