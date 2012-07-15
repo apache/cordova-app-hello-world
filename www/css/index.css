@@ -11,8 +11,6 @@ html {
 
 body {
     background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image: -o-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image: -moz-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image: -webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image: -ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image: -webkit-gradient(
@@ -23,15 +21,17 @@ body {
         color-stop(0.51, #E4E4E4)
     );
     display:table-cell;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
     vertical-align:middle;
 }
 
-body,
 h1 {
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:1em;
+    font-size:2em;
     font-weight:300;
-    text-transform:uppercase;
+    margin:0px;
+    padding:0px;
+    text-align:center;
 }
 
 img {
@@ -42,17 +42,10 @@ img {
     max-width:100%;
 }
 
-h1 {
-    font-size:2em;
-    margin:0px;
-    text-align:center;
-}
-
 .status {
     background-color:#333333;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
     border-radius:4px;
+    -webkit-border-radius:4px;
     color:#FFFFFF;
     display:block;
     font-size:1em;
