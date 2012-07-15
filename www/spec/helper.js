@@ -1,4 +1,4 @@
-beforeEach(function() {
+afterEach(function() {
     document.getElementById('stage').innerHTML = '';
 });
 
