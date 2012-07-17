@@ -1,7 +1,7 @@
 html,
 body {
     height:100%;
-    font-size:16px;
+    font-size:12px;
     width:100%;
 }
 
@@ -27,19 +27,13 @@ body {
 }
 
 h1 {
+    background-image:url(../img/cordova-small.png);
+    background-repeat:no-repeat;
     font-size:2em;
     font-weight:300;
     margin:0px;
+    overflow:visible;
     padding:0px;
-    text-align:center;
-}
-
-img {
-    display:block;
-    margin:0px auto;
-    margin-bottom:-20px;
-    width:400px;
-    max-width:100%;
 }
 
 .status {
@@ -47,14 +41,12 @@ img {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    display:block;
     font-size:1em;
-    margin:5px auto;
-    margin-top:10px;
-    padding:2px 4px;
+    margin:0px auto;
+    padding:2px 10px;
     text-align:center;
-    width:225px;
-    max-width:225px;
+    width:100%;
+    max-width:175px;
 }
 
 .status.complete {
@@ -74,3 +66,35 @@ img {
 .blink {
     -webkit-animation:fade 3000ms infinite;
 }
+
+/* portrait */
+@media screen and (max-aspect-ratio: 1/1) {
+    h1 {
+        background-position:center top;
+        padding:225px 0px 0px 0px;
+        text-align:center;
+    }
+}
+
+/* lanscape */
+@media screen and (min-aspect-ratio: 1/1) {
+    h1,
+    div {
+        padding-left:220px;
+    }
+
+    h1 {
+        background-position:left center;
+        margin-bottom:-100px;
+        margin-top:-100px;
+        padding-top:100px;
+        padding-bottom:100px;
+        text-align:left;
+    }
+
+    .status {
+        margin-left:0px;
+        margin-right:0px;
+    }
+}
+
