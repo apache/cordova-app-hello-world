@@ -30,7 +30,6 @@ body {
     background-image:url(../img/cordova-small.png);
     background-repeat:no-repeat;
     margin:0px auto;
-    padding-left:210px;
     width:275px;
 }
 
@@ -78,8 +77,8 @@ h1 {
 @media screen and (max-aspect-ratio: 1/1) {
     .app {
         background-position:center top;
-        height:100px; /* adds enough room for text */
-        padding:225px 0px 0px 0px;
+        height:100px;              /* adds enough room for text */
+        padding:180px 0px 0px 0px; /* background height - shadow offset */
     }
 }
 
@@ -87,8 +86,9 @@ h1 {
 @media screen and (min-aspect-ratio: 1/1) {
     .app {
         background-position:left center;
-        height:165px;     /* height + padding = background image size */
-        padding-top:80px;
+        height:140px;       /* height + padding = background image size */
+        padding-left:170px; /* background width */
+        padding-top:60px;   /* center the text */
     }
 }
 
