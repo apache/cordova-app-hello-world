@@ -82,16 +82,15 @@ h1 {
 }
 
 /* portrait */
-@media screen and (max-aspect-ratio: 1/1) {
-    .app {
-        background-position:center top;
-        height:100px;              /* adds enough room for text */
-        padding:180px 0px 0px 0px; /* background height - shadow offset */
-    }
+/* @media screen and (max-aspect-ratio: 1/1) */
+.app {
+    background-position:center top;
+    height:100px;              /* adds enough room for text */
+    padding:180px 0px 0px 0px; /* background height - shadow offset */
 }
 
-/* lanscape */
-@media screen and (min-aspect-ratio: 1/1) {
+/* lanscape (when wide enough) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:445px) {
     .app {
         background-position:left center;
         height:140px;       /* height + padding = background image size */
@@ -99,4 +98,3 @@ h1 {
         padding-top:60px;   /* center the text */
     }
 }
-
