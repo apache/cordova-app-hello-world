@@ -6,13 +6,17 @@ var app = {
         document.addEventListener('deviceready', this.deviceready, false);
     },
     deviceready: function() {
-        // note that this is an event handler so the scope is that of the event
-        // so we need to call app.report(), and not this.report()
+        // This is an event handler function, which means the scope is the event.
+        // So, we must explicitly called `app.report()` instead of `this.report()`.
         app.report('deviceready');
     },
     report: function(id) {
-        console.log("report:" + id);
-        // hide the .pending <p> and show the .complete <p>
+        // Report the event in the console
+        console.log("Report: " + id);
+
+        // Toggle the state from "pending" to "complete" for the reported ID.
+        // Accomplished by adding .hide to the pending element and removing
+        // .hide from the complete element.
         document.querySelector('#' + id + ' .pending').className += ' hide';
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
