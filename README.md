@@ -1,4 +1,4 @@
-# Hello Cordova
+# Hello World Cordova Application
 
 > Hello World sample app for Apache Cordova
 
@@ -25,7 +25,7 @@ Updating to Apache Cordova x.x.x:
     - `git commit -am "[app] Version x.x.x"`
     - `git tag x.x.x`
 
-### Note on Tagging
+### Tagging
 
 While Hello Cordova is a branch on `incubator-cordova-labs`, please prefix
 each tag with `hello-cordova`. For example, the tag for 1.9.0 should be
