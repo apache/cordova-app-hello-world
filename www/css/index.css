@@ -23,12 +23,8 @@ body {
     width:100%;
 }
 
-html {
-    display:table;
-}
-
 body {
-    background-color:#A7A7A7;
+    background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -39,17 +35,11 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
+    background-attachment:fixed;
     display:table-cell;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     text-transform:uppercase;
     vertical-align:middle;
-}
-
-.app {
-    background-image:url(../img/cordova.png);
-    background-repeat:no-repeat;
-    margin:0px auto;
-    width:275px;
 }
 
 h1 {
@@ -99,9 +89,12 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-/* portrait */
-/* @media screen and (max-aspect-ratio: 1/1) */
 .app {
+    background:url(../img/cordova.png) no-repeat;
+    position: absolute;
+    left: 50%; /* center container text */
+    top: 50%;
+    margin: -120px 0 0 -110px; /* shifts container to top left by half its width and height */
     background-position:center top;
     height:100px;              /* adds enough room for text */
     padding:180px 0px 0px 0px; /* background height - shadow offset */
@@ -114,5 +107,6 @@ h1 {
         height:140px;       /* height + padding = background image size */
         padding-left:170px; /* background width */
         padding-top:60px;   /* center the text */
+        margin: -90px 0 0 -200px; /* shifts container to top left by half its width and height */
     }
 }
