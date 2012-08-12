@@ -42,7 +42,7 @@ body {
 
 /* portrait layout for the app (default) */
 .app {
-    background:url(../img/cordova.png) no-repeat;
+    background:url(../img/logo.png) no-repeat;
     position:absolute;
     left:50%;
     top:50%;
