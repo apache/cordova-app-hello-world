@@ -50,6 +50,7 @@ body {
     background-position:center top;
     height:100px;                   /* add enough room for text */
     padding:180px 0px 0px 0px;      /* background-image height - image's shadow */
+    text-align:center;
 }
 
 /* lanscape layout for the app (when wide enough) */
@@ -78,11 +79,8 @@ h1 {
     -webkit-border-radius:4px;
     color:#FFFFFF;
     font-size:12px;
-    margin:0px auto;
-    padding:2px 10px;
-    text-align:center;
-    width:100%;
-    max-width:175px;
+    margin:0px 20px;
+    padding:2px 20px;
 }
 
 .status.complete {
