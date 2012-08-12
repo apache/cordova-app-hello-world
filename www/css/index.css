@@ -36,10 +36,8 @@ body {
         color-stop(0.51, #E4E4E4)
     );
     background-attachment:fixed;
-    display:table-cell;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     text-transform:uppercase;
-    vertical-align:middle;
 }
 
 h1 {
