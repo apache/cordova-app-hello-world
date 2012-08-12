@@ -41,8 +41,8 @@ body {
 }
 
 h1 {
-    font-size:2em;
-    font-weight:300;
+    font-size:24px;
+    font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
@@ -54,7 +54,7 @@ h1 {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
-    font-size:1em;
+    font-size:12px;
     margin:0px auto;
     padding:2px 10px;
     text-align:center;
