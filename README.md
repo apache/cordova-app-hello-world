@@ -1,6 +1,6 @@
-# Hello World Cordova Application
+# Hello World Application for Apache Cordova
 
-> Hello World sample app for Apache Cordova
+> Simple Hello World application and test suite.
 
 ## Run App
 
@@ -10,12 +10,15 @@
 
     /www/spec.html
 
-## Updating Cordova Version
+## Versions and Tags
 
-The application's version is directly tied to each Apache Cordova release.
-The tag 1.9.0 for Hello Cordova is writtend for Apache Cordova 1.9.0.
+The Hello World's version is directly tied to an Apache Cordova version.
+For example, the tag `1.9.0` for Hello World is compatible with
+Apache Cordova `1.9.0`.
 
-Updating to Apache Cordova x.x.x:
+## How to Update
+
+Update to Apache Cordova x.x.x by:
 
 1. `www/index.html`
     - Update `<script type="text/javascript" src="cordova-x.x.x.js"></script>`
@@ -24,10 +27,4 @@ Updating to Apache Cordova x.x.x:
 3. Commit and Tag
     - `git commit -am "[app] Version x.x.x"`
     - `git tag x.x.x`
-
-### Tagging
-
-While Hello Cordova is a branch on `incubator-cordova-labs`, please prefix
-each tag with `hello-cordova`. For example, the tag for 1.9.0 should be
-`hello-cordova-1.9.0`
 
