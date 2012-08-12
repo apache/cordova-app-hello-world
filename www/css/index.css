@@ -40,6 +40,29 @@ body {
     text-transform:uppercase;
 }
 
+/* portrait layout for the app (default) */
+.app {
+    background:url(../img/cordova.png) no-repeat;
+    position: absolute;
+    left: 50%; /* center container text */
+    top: 50%;
+    margin: -120px 0 0 -110px; /* shifts container to top left by half its width and height */
+    background-position:center top;
+    height:100px;              /* adds enough room for text */
+    padding:180px 0px 0px 0px; /* background height - shadow offset */
+}
+
+/* lanscape layout for the app (when wide enough) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:445px) {
+    .app {
+        background-position:left center;
+        height:140px;       /* height + padding = background image size */
+        padding-left:170px; /* background width */
+        padding-top:60px;   /* center the text */
+        margin: -90px 0 0 -200px; /* shifts container to top left by half its width and height */
+    }
+}
+
 h1 {
     font-size:24px;
     font-weight:normal;
@@ -85,26 +108,4 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
-}
-
-.app {
-    background:url(../img/cordova.png) no-repeat;
-    position: absolute;
-    left: 50%; /* center container text */
-    top: 50%;
-    margin: -120px 0 0 -110px; /* shifts container to top left by half its width and height */
-    background-position:center top;
-    height:100px;              /* adds enough room for text */
-    padding:180px 0px 0px 0px; /* background height - shadow offset */
-}
-
-/* lanscape (when wide enough) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:445px) {
-    .app {
-        background-position:left center;
-        height:140px;       /* height + padding = background image size */
-        padding-left:170px; /* background width */
-        padding-top:60px;   /* center the text */
-        margin: -90px 0 0 -200px; /* shifts container to top left by half its width and height */
-    }
 }
