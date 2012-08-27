@@ -37,6 +37,8 @@ body {
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin:0px;
+    padding:0px;
     text-transform:uppercase;
 }
 
