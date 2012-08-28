@@ -18,12 +18,12 @@
  */
 var app = {
     initialize: function() {
-        this.bind();
+        this.bindEvents();
     },
-    bind: function() {
-        document.addEventListener('deviceready', this.deviceready, false);
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
-    deviceready: function() {
+    onDeviceReady: function() {
         // This is an event handler function, which means the scope is the event.
         // So, we must explicitly called `app.report()` instead of `this.report()`.
         app.report('deviceready');

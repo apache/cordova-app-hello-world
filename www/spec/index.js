@@ -20,25 +20,25 @@ describe('app', function() {
     describe('initialize', function() {
         it('should bind deviceready', function() {
             runs(function() {
-                spyOn(app, 'deviceready');
+                spyOn(app, 'onDeviceReady');
                 app.initialize();
                 helper.trigger(window.document, 'deviceready');
             });
 
             waitsFor(function() {
-                return (app.deviceready.calls.length > 0);
-            }, 'deviceready should be called once', 500);
+                return (app.onDeviceReady.calls.length > 0);
+            }, 'onDeviceReady should be called once', 500);
 
             runs(function() {
-                expect(app.deviceready).toHaveBeenCalled();
+                expect(app.onDeviceReady).toHaveBeenCalled();
             });
         });
     });
 
-    describe('deviceready', function() {
+    describe('onDeviceReady', function() {
         it('should report that it fired', function() {
             spyOn(app, 'report');
-            app.deviceready();
+            app.onDeviceReady();
             expect(app.report).toHaveBeenCalledWith('deviceready');
         });
     });
