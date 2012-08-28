@@ -16,13 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-html,
-body {
-    height:100%;
-    font-size:12px;
-    width:100%;
-}
-
 body {
     background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -37,9 +30,12 @@ body {
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
     margin:0px;
     padding:0px;
     text-transform:uppercase;
+    width:100%;
 }
 
 /* Portrait layout (default) */
