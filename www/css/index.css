@@ -78,8 +78,7 @@ h1 {
     text-align:center;
 }
 
-.status {
-    background-color:#333333;
+.event {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
@@ -88,11 +87,13 @@ h1 {
     padding:2px 0px;
 }
 
-.status.complete {
-    background-color:#4B946A;
+.event.listening {
+    background-color:#333333;
+    display:block;
 }
 
-.hide {
+.event.received {
+    background-color:#4B946A;
     display:none;
 }
 
