@@ -22,6 +22,8 @@ Update to Apache Cordova x.x.x by:
 
 1. `www/index.html`
     - Update `<script type="text/javascript" src="cordova-x.x.x.js"></script>`
+2. `VERSION`
+    - Update the version
 3. Commit and Tag
     - `git commit -am "[app] Version x.x.x"`
     - `git tag x.x.x`
