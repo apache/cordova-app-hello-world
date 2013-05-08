@@ -20,11 +20,9 @@ For example, Hello World `2.0.0` is compatible with Apache Cordova `2.0.0`.
 
 Update to Apache Cordova x.x.x by:
 
-1. `www/index.html`
-    - Update `<script type="text/javascript" src="cordova-x.x.x.js"></script>`
-2. `VERSION`
+1. `VERSION`
     - Update the version
-3. Commit and Tag
+2. Commit and Tag
     - `git commit -am "[app] Version x.x.x"`
     - `git tag x.x.x`
 
