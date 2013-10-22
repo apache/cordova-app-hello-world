@@ -1,10 +1,6 @@
 # Apache Cordova Hello World Application
 
-> Simple Hello World application and test suite.
-
-## Run Application
-
-    /www/index.html
+Simple Hello World application and test suite.
 
 ## Run Tests
 
@@ -15,6 +11,9 @@
 The Hello World's version is directly tied to an Apache Cordova release.
 
 For example, Hello World `2.0.0` is compatible with Apache Cordova `2.0.0`.
+
+To update the snapshot within a platform repo, copy `www/` into the repo's
+template directory, and copy in the relevant files from `res/` as well.
 
 ## How to Update
 
