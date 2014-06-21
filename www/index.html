@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -38,6 +38,8 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
+            window.onerror = function (errorMsg, url, lineNumber) { alert("ERROR:" + errorMsg + ", " + url + ":" + lineNumber); };
+
             app.initialize();
         </script>
     </body>
