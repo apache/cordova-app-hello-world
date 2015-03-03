@@ -1,0 +1,16 @@
+{
+  "name": "cordova-app-hello-world",
+  "version": "3.8.0-dev",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-wip-us.apache.org/repos/asf/cordova-app-hello-world.git"
+  },
+  "keywords": [],
+  "author": "Apache Cordova",
+  "license": "Apache version 2.0"
+}
