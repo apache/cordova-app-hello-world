@@ -19,3 +19,15 @@
 #
 -->
 # Release Notes
+
+### 3.8.0 (Mar 10, 2015)
+* added license header to config.xml
+* added releasenotes.md
+* removed version file, package.json can keep track of version
+* Adding hooks to default app
+* [CB-8597] First attempt at importing cordova-app-hello-world via npm dependency
+* Remove jasmine ref
+* Tweak CSP string
+* CB-8295 Add content-security-policy `<meta>` to template
+* Remove target-density and height=device-height from `<viewport>`
+* Remove self-closing slashes from `<meta>` since this isn't xhtml
