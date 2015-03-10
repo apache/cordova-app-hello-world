@@ -1,0 +1,14 @@
+{
+  "name": "cordova-app-hello-world",
+  "version": "3.8.0-dev",
+  "description": "This is the hello world app used by the `cordova create` command.",
+  "repository": {
+    "type": "git",
+    "url": "https://git-wip-us.apache.org/repos/asf/cordova-app-hello-world.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache version 2.0"
+}
