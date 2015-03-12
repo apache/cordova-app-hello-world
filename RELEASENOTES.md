@@ -21,6 +21,8 @@
 # Release Notes
 
 ### 3.8.0 (Mar 10, 2015)
+* Remove path from CSP string (since CSP ignores paths). Add CSP rationale within comment 
+* CB-8295 Fix CSP string, which had an invalid : in it
 * added license header to config.xml
 * added releasenotes.md
 * removed version file, package.json can keep track of version
