@@ -21,7 +21,8 @@
 # Release Notes
 
 ### 3.8.0 (Mar 10, 2015)
-* Remove path from CSP string (since CSP ignores paths). Add CSP rationale within comment 
+* Add unsafe-eval to default CSP since many frameworks run faster with it on
+* Remove path from CSP string (since CSP ignores paths). Add CSP rationale within commen 
 * CB-8295 Fix CSP string, which had an invalid : in it
 * added license header to config.xml
 * added releasenotes.md
