@@ -20,6 +20,9 @@
 -->
 # Release Notes
 
+### 3.9.0 (Mar 23, 2015)
+* CB-8716 Add Whitelist plugin to config.xml
+
 ### 3.8.0 (Mar 10, 2015)
 * Add unsafe-eval to default CSP since many frameworks run faster with it on
 * Remove path from CSP string (since CSP ignores paths). Add CSP rationale within commen 
