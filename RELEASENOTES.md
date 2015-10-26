@@ -20,6 +20,11 @@
 -->
 # Release Notes
 
+### 3.10.0 (Oct 26, 2015)
+* CB-9712 CLI 5.3 breaks with node 3.3.3
+* don't duplicate hooks guide
+* CB-8896 updated whitelist dependency to use spec
+
 ### 3.9.0 (Mar 23, 2015)
 * CB-8716 Add Whitelist plugin to config.xml
 
