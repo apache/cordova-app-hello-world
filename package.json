@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "keywords": [
-    "ecosystem:cordova"
+    "ecosystem:cordova",
+    "cordova:template"
   ],
   "author": "Apache Software Foundation",
   "license": "Apache version 2.0"
