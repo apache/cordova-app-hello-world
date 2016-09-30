@@ -1,6 +1,6 @@
 {
   "name": "cordova-app-hello-world",
-  "version": "3.10.1-dev",
+  "version": "3.11.0",
   "description": "This is the hello world app used by the `cordova create` command.",
   "repository": {
     "type": "git",
@@ -12,5 +12,5 @@
     "cordova:template"
   ],
   "author": "Apache Software Foundation",
-  "license": "Apache version 2.0"
+  "license": "Apache-2.0"
 }
