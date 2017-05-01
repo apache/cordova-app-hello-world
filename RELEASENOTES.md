@@ -20,6 +20,10 @@
 -->
 # Release Notes
 
+### 3.12.0 (May 02, 2017)
+* [CB-12684](https://issues.apache.org/jira/browse/CB-12684): added `package.json` to default hello world app
+* Add github pull request template
+
 ### 3.11.0 (Sep 29, 2016)
 * [CB-11938](https://issues.apache.org/jira/browse/CB-11938) updated csp to include content: for img-src
 * [CB-11412](https://issues.apache.org/jira/browse/CB-11412) Update templates to designate template source dir
