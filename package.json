@@ -7,7 +7,10 @@
     "url": "https://github.com/apache/cordova-app-hello-world"
   },
   "main": "index.js",
-  "files": ["*.md", "template_src"],
+  "files": [
+    "*.md",
+    "template_src"
+  ],
   "keywords": [
     "ecosystem:cordova",
     "cordova:template"
