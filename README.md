@@ -21,25 +21,47 @@
 
 # Apache Cordova Hello World Application
 
-Simple Hello World application. This is used as the default app template
-when creating new projects.
+A simple Hello World application that serves two purposes:
+- It is used as the default app template when creating new projects
+- It is a reference for building and publishing custom Cordova Templates
 
-## Versions and Tags
+## Structure of your template
+```
+template_package
+├── package.json (for your template package to be published on npm)
+├── index.js
+└── template_src (contains template files)
+    ├── package.json
+    ├── config.xml
+    └── (files and folders that make up the template)
+```
+### Outside of `template_src`
+All files outside of `template_src` are used to define parameters about the template. These files are not copied over at creation, so feel free to add a README or any other files outside  of template_src.
 
-The Hello World's version is directly tied to an Apache Cordova release.
+#### index.js
+`index.js` points to where the template exists. You'll see that index.js usually looks like:
+```javascript
+var path = require('path');
 
-For example, Hello World `2.0.0` is compatible with Apache Cordova `2.0.0`.
+module.exports = {
+    dirname : path.join(__dirname, 'template_src')
+};
+```
 
-To update the snapshot within a platform repo, copy `www/` into the repo's
-template directory, and copy in the relevant files from `res/` as well.
+#### package.json
+This `package.json` holds *information about the template itself* like its name, version etc. All templates should contain the keyword `"cordova:template"` so that the template is searchable on npm. For example:
+```json
+{
+    "name": "cordova-example-template",
+    "version": "1.0.0",
+    "...": "...",
+    "keywords": [
+        "cordova:template"
+    ]
+}
+```
 
-## How to Update
+### Inside of `template_src`
+All files inside of `template_src` compose the template from which a user would desire in order to create their project. Everything in this folder is copied over to the created project.
 
-Update to Apache Cordova x.x.x by:
-
-1. `VERSION`
-    - Update the version
-2. Commit and Tag
-    - `git commit -am "[app] Version x.x.x"`
-    - `git tag x.x.x`
-
+The package.json in `template_src` should be filled with information that describes *the project that would be created from the template*.

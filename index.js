@@ -22,6 +22,6 @@
 
 var path = require('path');
 
-module.exports = module.exports = {
+module.exports = {
     dirname: path.join(__dirname, 'template_src')
 };
