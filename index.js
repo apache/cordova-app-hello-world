@@ -18,7 +18,7 @@
  */
 
 // Entry point is needed so that the module could be required.
-// The module dir path will be need to copy resources from it.
+// The module dir path will be needed to copy resources from it.
 
 var path = require('path');
 
