@@ -20,6 +20,14 @@
 -->
 # Release Notes
 
+### 4.0.0 (Dec 20, 2018)
+* Absorb cordova-template-reference (#24)
+* Slight CSS modernization & use system fonts
+* [CB-12886](https://issues.apache.org/jira/browse/CB-12886) Fix for safe-area handling on **iOS** 11+
+* [CB-14098](https://issues.apache.org/jira/browse/CB-14098) Remove unused res folder
+* [CB-12397](https://issues.apache.org/jira/browse/CB-12397) fix .gitignore for plugins & platforms
+* [CB-12762](https://issues.apache.org/jira/browse/CB-12762) point `package.json` repo items to github instead of apache mirrors site
+
 ### 3.11.0 (Sep 29, 2016)
 * [CB-11938](https://issues.apache.org/jira/browse/CB-11938) updated csp to include content: for img-src
 * [CB-11412](https://issues.apache.org/jira/browse/CB-11412) Update templates to designate template source dir
