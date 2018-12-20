@@ -1,6 +1,6 @@
 {
   "name": "cordova-app-hello-world",
-  "version": "4.0.0",
+  "version": "4.0.1-dev",
   "description": "This is the hello world app used by the `cordova create` command.",
   "repository": {
     "type": "git",
