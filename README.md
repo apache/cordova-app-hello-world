@@ -65,3 +65,5 @@ This `package.json` holds *information about the template itself* like its name,
 All files inside of `template_src` compose the template from which a user would desire in order to create their project. Everything in this folder is copied over to the created project.
 
 The package.json in `template_src` should be filled with information that describes *the project that would be created from the template*.
+
+If you want to include `.gitignore` files in your template, you have to name them `gitignore` (without a leading dot) instead. They will be renamed to `.gitignore` upon template expansion.
