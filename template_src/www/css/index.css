@@ -89,6 +89,9 @@ h1 {
     display:none;
 }
 
+#deviceready.ready .event.listening { display: none; }
+#deviceready.ready .event.received { display: block; }
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }

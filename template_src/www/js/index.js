@@ -24,12 +24,6 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
-    var parentElement = document.getElementById('deviceready');
-    var listeningElement = parentElement.querySelector('.listening');
-    var receivedElement = parentElement.querySelector('.received');
-
-    listeningElement.setAttribute('style', 'display:none;');
-    receivedElement.setAttribute('style', 'display:block;');
-
-    console.log('Received Event: deviceready');
+    console.log('Received deviceready event');
+    document.getElementById('deviceready').classList.add('ready');
 }
