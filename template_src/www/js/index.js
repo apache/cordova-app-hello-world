@@ -17,13 +17,12 @@
  * under the License.
  */
 
-// before any cordova functionality can be used, you must hook into this event
+// Wait for the deviceready event before using any of Cordova's device APIs.
+// See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-
-    // cordova is now initialized!
-    // have fun!
+    // Cordova is now initialized. Have fun!
 
     var parentElement = document.getElementById('deviceready');
     var listeningElement = parentElement.querySelector('.listening');
