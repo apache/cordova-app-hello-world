@@ -2,10 +2,8 @@
   "name": "cordova-app-hello-world",
   "version": "5.0.0-dev",
   "description": "This is the hello world app used by the `cordova create` command.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/apache/cordova-app-hello-world"
-  },
+  "repository": "github:apache/cordova-app-hello-world",
+  "bugs": "https://github.com/apache/cordova-app-hello-world/issues",
   "main": "index.js",
   "keywords": [
     "ecosystem:cordova",
