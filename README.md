@@ -81,6 +81,6 @@ If you want to include `.gitignore` files in your template, you have to name the
 
 ### Installing from Github
 
-If you already have Cordova setup and want to install this application from the Github repository, rather than form NPM use
+To install this template from the GitHub repository instead of NPM, use:
 
    cordova create MY_INSTALL_PATH/cordova-app-hello-world --template=https://github.com/apache/cordova-app-hello-world
