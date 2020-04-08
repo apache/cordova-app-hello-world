@@ -78,3 +78,9 @@ All files inside of `template_src` compose the template from which a user would 
 The package.json in `template_src` should be filled with information that describes *the project that would be created from the template*.
 
 If you want to include `.gitignore` files in your template, you have to name them `gitignore` (without a leading dot) instead. They will be renamed to `.gitignore` upon template expansion.
+
+### Installing from Github
+
+If you already have Cordova setup and want to install this application from the Github repository, rather than form NPM use
+
+   cordova create MY_INSTALL_PATH/cordova-app-hello-world --template=https://github.com/apache/cordova-app-hello-world
