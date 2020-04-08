@@ -83,4 +83,4 @@ If you want to include `.gitignore` files in your template, you have to name the
 
 To install this template from the GitHub repository instead of NPM, use:
 
-   cordova create MY_INSTALL_PATH/cordova-app-hello-world --template=https://github.com/apache/cordova-app-hello-world
+`cordova create MY_INSTALL_PATH/cordova-app-hello-world --template=https://github.com/apache/cordova-app-hello-world`
