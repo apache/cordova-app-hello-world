@@ -20,6 +20,24 @@
 -->
 # Release Notes
 
+### 5.0.0 (Apr 08, 2020)
+
+* [GH-64](https://github.com/apache/cordova-app-hello-world/pull/64) doc(README): fix markdown lint warnings & add npm badge
+* [GH-62](https://github.com/apache/cordova-app-hello-world/pull/62) chore(git): ignores `node_modules` folder
+* [GH-61](https://github.com/apache/cordova-app-hello-world/pull/61) chore(npm): add ignore list & update package data
+* [GH-60](https://github.com/apache/cordova-app-hello-world/pull/60) refactor: transform `var` to `let` & `const`
+* [GH-43](https://github.com/apache/cordova-app-hello-world/pull/43) feature: dark mode
+* [GH-59](https://github.com/apache/cordova-app-hello-world/pull/59) style: update `config.xml`
+  * replace single quotation marks with double quotation mark
+  * capitalize `UTF-8`
+* [GH-58](https://github.com/apache/cordova-app-hello-world/pull/58) chore(index.html): add charset, prevent scaling, use default attributes
+* [GH-57](https://github.com/apache/cordova-app-hello-world/pull/57) Update `index.css`, fixes duplicated `env` right
+* [GH-55](https://github.com/apache/cordova-app-hello-world/pull/55) Simplify demo app JavaScript
+* [GH-56](https://github.com/apache/cordova-app-hello-world/pull/56) fix: move default plugin to `package.json`
+* [GH-52](https://github.com/apache/cordova-app-hello-world/pull/52) fix: remove unsupported hooks directory
+* [GH-50](https://github.com/apache/cordova-app-hello-world/pull/50) feat: ensure `.gitignore` file in generated app
+* Add or update GitHub pull request and issue template
+
 ### 4.0.0 (Dec 20, 2018)
 * Absorb cordova-template-reference (#24)
 * Slight CSS modernization & use system fonts
