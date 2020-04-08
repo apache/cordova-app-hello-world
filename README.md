@@ -79,7 +79,7 @@ The package.json in `template_src` should be filled with information that descri
 
 If you want to include `.gitignore` files in your template, you have to name them `gitignore` (without a leading dot) instead. They will be renamed to `.gitignore` upon template expansion.
 
-### Installing from Github
+### Installing from GitHub
 
 To install this template from the GitHub repository instead of NPM, use:
 
