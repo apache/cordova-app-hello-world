@@ -17,28 +17,33 @@
  specific language governing permissions and limitations
  under the License.
 -->
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    id="io.cordova.hellocordova"
+    version="1.0.0">
     <name>HelloCordova</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
+
+    <!-- https://s.apache.org/cdv-content-config -->
     <content src="index.html" />
-    <!-- Allow list configuration can be found at: https://cordova.apache.org/docs/en/latest/ -->
-    <access origin="*" />
+
+    <!-- To allow connections to other resources, you must explicitly permit them using `access` tags. -->
+    <!-- https://s.apache.org/cdv-network-request-access -->
+    <!-- Example:
+    <access allow="https://cordova.apache.org" />
+    -->
+
+    <!-- To control which URLs the WebView itself can be navigated to, use the `allow-navigation` tags. -->
+    <!-- https://s.apache.org/cdv-allow-navigation -->
+    <!-- Example:
+    <allow-navigation href="https://cordova.apache.org/*" />
+    -->
+
+    <!-- To control which URLs the app is allowed to ask the system to open, use the `allow-intent` tags. -->
+    <!-- https://s.apache.org/cdv-allow-intent -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
 </widget>
