@@ -27,6 +27,7 @@
         Apache Cordova Team
     </author>
 
+    <!-- https://s.apache.org/cdv-content-config -->
     <content src="index.html" />
 
     <!-- To allow connections to other resources, you must explicitly permit them using `access` tags. -->
