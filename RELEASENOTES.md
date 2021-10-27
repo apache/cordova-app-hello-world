@@ -20,6 +20,15 @@
 -->
 # Release Notes
 
+### 6.0.0 (Oct 27, 2021)
+
+* [GH-73](https://github.com/apache/cordova-app-hello-world/pull/73) cleanup!(`config.xml`): simplify defaults
+* [GH-67](https://github.com/apache/cordova-app-hello-world/pull/67) chore(ios): remove `gap` from CSP
+* [GH-66](https://github.com/apache/cordova-app-hello-world/pull/66) chore!: remove whitelist plugin & reference
+* chore(asf): Update GitHub repo metadata
+* chore(asf): Update git notification settings
+* chore(asf): Update CONTRIBUTING.md
+
 ### 5.0.0 (Apr 08, 2020)
 
 * [GH-64](https://github.com/apache/cordova-app-hello-world/pull/64) doc(README): fix markdown lint warnings & add npm badge
