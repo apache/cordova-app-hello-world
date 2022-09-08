@@ -33,7 +33,7 @@
     <!-- To allow connections to other resources, you must explicitly permit them using `access` tags. -->
     <!-- https://s.apache.org/cdv-network-request-access -->
     <!-- Example:
-    <access allow="https://cordova.apache.org" />
+    <access origin="https://cordova.apache.org" />
     -->
 
     <!-- To control which URLs the WebView itself can be navigated to, use the `allow-navigation` tags. -->
