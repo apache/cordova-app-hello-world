@@ -18,6 +18,11 @@
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    box-sizing: border-box;
+}
+
+html {
+    overscroll-behavior: none;
 }
 
 body {
@@ -33,7 +38,9 @@ body {
     padding:0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-size-adjust: none;
     text-transform:uppercase;
+    user-select: none;
     width:100%;
 }
 
@@ -98,8 +105,8 @@ h1 {
 }
 
 .blink {
-    animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+    animation:fade 3000ms infinite;
 }
 
 
