@@ -22,7 +22,9 @@
     id="org.apache.cordova.hellocordova"
     version="1.0.0">
     <name>Hello Cordova</name>
-    <description>Sample Apache Cordova App</description>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
