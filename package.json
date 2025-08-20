@@ -1,6 +1,6 @@
 {
   "name": "cordova-app-hello-world",
-  "version": "6.0.1-dev",
+  "version": "7.0.0-dev",
   "description": "This is the hello world app used by the `cordova create` command.",
   "repository": "github:apache/cordova-app-hello-world",
   "bugs": "https://github.com/apache/cordova-app-hello-world/issues",
