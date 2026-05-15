@@ -22,8 +22,13 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+    // Cordova is now initialized. Put plugin-dependent code here.
+    const runtimeInfo = `cordova-${cordova.platformId}@${cordova.version}`;
+    console.log(`Running ${runtimeInfo}`);
+    // Set the status text to show the Cordova runtime is ready, and include
+    // platform and version info.
+    const statusTextElement = document.getElementById('statusText');
+    statusTextElement.innerHTML = `Device is ready:<br>${runtimeInfo}`;
+    // Add a CSS class to apply styles indicating the app is ready.
+    statusTextElement.classList.add('ready');
 }

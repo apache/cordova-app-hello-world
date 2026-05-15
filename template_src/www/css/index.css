@@ -18,101 +18,86 @@
 */
 
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    /* iOS Safari: disable the gray tap highlight flash when tapping elements. */
+    -webkit-tap-highlight-color: transparent;
+    /* Keep element sizing predictable by including padding and border in width/height. */
     box-sizing: border-box;
 }
 
 html {
+    /* Prevent pull-to-refresh and scroll chaining to keep app-like scrolling behavior. */
     overscroll-behavior: none;
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(to bottom, #A7A7A7 0%, #E4E4E4 51%);
-    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
-    font-size:12px;
-    height:100vh;
-    margin:0px;
-    padding:0px;
-    /* Padding to avoid the "unsafe" areas behind notches in the screen */
-    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    /* iOS Safari: disable text/image callout menu on long press. */
+    -webkit-touch-callout: none;
+    /* iOS Safari: prevent automatic font inflation when device orientation changes. */
+    -webkit-text-size-adjust: none;
+    /* Standard property for the same behavior in non-WebKit/modern engines. */
     text-size-adjust: none;
-    text-transform:uppercase;
+    /* Legacy WebKit prefix for user-select, keeps behavior consistent on older iOS WebViews. */
+    -webkit-user-select: none;
+    /* Disable long-press text selection/highlight for a more native app feel. */
     user-select: none;
-    width:100%;
+    background: linear-gradient(180deg, #f9fbff 0%, #eef4ff 100%);
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width: 100%;
 }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+main {
+    padding: 20px;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+section {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid #dbe3f1;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+    margin-top: 14px;
+    padding: 16px;
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+#statusText {
+    background: rgba(239, 68, 68, 0.12);
+    border-radius: 8px;
+    color: #7f1d1d;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 12px;
 }
 
-.event {
-    border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+#statusText.ready {
+    background: rgba(34, 197, 94, 0.12);
+    color: #15803d;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
-
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
-
-#deviceready.ready .event.listening { display: none; }
-#deviceready.ready .event.received { display: block; }
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
-
-.blink {
-    -webkit-animation:fade 3000ms infinite;
-    animation:fade 3000ms infinite;
-}
-
-
+/* Apply dark theme colors when the OS or browser prefers dark appearance. */
 @media screen and (prefers-color-scheme: dark) {
     body {
-        background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
+        background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+        color: #e5e7eb;
+    }
+
+    section {
+        background: rgba(17, 24, 39, 0.75);
+        border-color: #334155;
+        box-shadow: none;
+    }
+
+    #statusText {
+        background: rgba(127, 29, 29, 0.3);
+        color: #fca5a5;
+    }
+
+    #statusText.ready {
+        background: rgba(20, 83, 45, 0.3);
+        color: #86efac;
     }
 }
