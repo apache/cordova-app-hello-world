@@ -15,29 +15,38 @@
 # specific language governing permissions and limitations
 # under the License.
 
-name: Release Auditing
+version: 2
 
-on:
-  push:
-    branches-ignore:
-      - 'dependabot/**'
-  pull_request:
-    branches:
-      - '*'
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    cooldown:
+      default-days: 5
+    schedule:
+      interval: "weekly" # Every Monday
+    groups:
+      gh-actions-patch-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
+          - "minor"
 
-permissions:
-  contents: read
-
-jobs:
-  test:
-    name: Audit Licenses
-    runs-on: ubuntu-latest
-    steps:
-      # Checkout project
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-          fetch-depth: 1
-
-      # Check license headers
-      - uses: erisu/apache-rat-action@30c94d10ed21e6f6fd5590dc5c158f58cae7a0dd # v3.0.0
+  - package-ecosystem: "npm"
+    directory: "/"
+    cooldown:
+      default-days: 5
+      semver-major-days: 14
+    schedule:
+      interval: "weekly" # Every Monday
+    groups:
+      npm-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
+      npm-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
