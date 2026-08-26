@@ -19,31 +19,61 @@
 -->
 <html>
     <head>
+        <!-- Use UTF-8 so text and symbols render consistently across devices. -->
         <meta charset="utf-8">
         <!--
-        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
-            https://cordova.apache.org/docs/en/latest/
-        Some notes:
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
+            Content Security Policy (CSP) is an added layer of security that helps to detect
+            and mitigate certain types of attacks, including Cross Site Scripting (XSS) and
+            data injection attacks. Customize this policy to fit your own app's needs.
+            For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/guide/appdev/allowlist/index.html#content-security-policy-csp
+            Some notes:
+                * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+                * Inline scripts are disabled by default, which means <script> tags and HTML event attributes
+                  like onclick="" will not work, to mitigate risk of XSS vulnerabilities.
+                  To change this add 'unsafe-inline' to default-src.
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval';
+            style-src 'self' 'unsafe-inline';
+            media-src *;
+            img-src 'self' data: content:;
+        ">
+        <!--
+          Turn off phone number detection to prevent automatic conversion of phone numbers
+          into tappable links.
+        -->
         <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <!--
+            Configure the app viewport for a native-app feel:
+            - width=device-width: match the layout viewport to the device width
+            - initial/minimum/maximum-scale=1: keep the page at 1x scale
+            - user-scalable=no: disable pinch zoom
+            - viewport-fit=cover: allow content to use the full screen on devices with notches
+        -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+        <!--
+            Advertise support for both light and dark color schemes so built-in UI
+            elements (like form controls and scrollbars) can match the active theme.
+        -->
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
+        <title>Cordova Hello World Example</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <main>
+            <header>
+                <h1>Hello World!</h1>
+                <h2>Apache Cordova</h2>
+                <img src="img/logo.png" alt="Cordova logo" style="width: 80px;">
+                <p>Mobile apps with HTML, CSS & JS</p>
+            </header>
+
+            <section>
+                <h2>Runtime Status</h2>
+                <p id="statusText">Connecting to device...</p>
+            </section>
+        </main>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
     </body>
